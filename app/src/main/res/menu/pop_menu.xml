@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/transactionItemOfPopMenu"
+        android:title="@string/buttonTitleOfPop" />
+    <item
+        android:id="@+id/shareItemOfPopMenu"
+        android:title="@string/buttonTitle2OfPop" />
+    <item
+        android:id="@+id/removeItemOfPopMenu"
+        android:title="@string/buttonTitle3OfPop" />
+</menu>

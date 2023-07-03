@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.crdir.iMemo.ForgetpwdActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        >
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@mipmap/headpicture"
+            android:layout_gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_ll_edittv">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_baseline_account_box_24"/>
+            <EditText
+                android:id="@+id/et_account"
+                android:layout_width="280dp"
+                android:layout_height="50dp"
+                android:background="@null"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:hint="请输入账号"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded_ll_edittv">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_baseline_edit_24"/>
+            <EditText
+                android:id="@+id/et_name"
+                android:layout_width="280dp"
+                android:layout_height="50dp"
+                android:background="@null"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:hint="请输入姓名"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded_ll_edittv">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_baseline_lock_24"/>
+            <EditText
+                android:id="@+id/et_password"
+                android:layout_width="280dp"
+                android:layout_height="50dp"
+                android:background="@null"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:inputType="textPassword"
+                android:hint="请重置密码"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded_ll_edittv">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_baseline_verified_user_24"/>
+            <EditText
+                android:id="@+id/et_passwordagain"
+                android:layout_width="280dp"
+                android:layout_height="50dp"
+                android:background="@null"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:inputType="textPassword"
+                android:hint="请再次验证密码"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/bt_resetpwd"
+            android:layout_width="330dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:background="@drawable/button_color"
+            android:text="重置密码"
+            android:textSize="18dp"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

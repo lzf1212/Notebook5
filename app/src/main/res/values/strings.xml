@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">iMemo</string>
+    <string name="app_label">Welcome to iMemo</string>
+    <string name="btn_memo">备忘录</string>
+    <string name="btn_add">新便签</string>
+    <string name="btn_usr">我的</string>
+    <string name="memo_title">My Memo</string>
+    <string name="usr_info">我的</string>
+    <string name="setting_btn">设置</string>
+    <string name="share_btn">分享</string>
+    <string name="currentLabel">暂无待办事务</string>
+    <string name="currentLabelTitle">待办事务</string>
+    <string name="usr_name">你的名字</string>
+    <string name="usr_otherInfo">摩羯座 ♂</string>
+    <string name="about">关于</string>
+    <string name="help">帮助</string>
+    <string name="ok">保存设置</string>
+    <string name="nameLabelTitle">姓名</string>
+    <string name="sexLabelTitle">性别</string>
+    <string name="starLabelTitle">星座</string>
+    <string name="settingTint">设置你的信息</string>
+    <string name="shareTint">分享你的事务</string>
+    <string name="male">男</string>
+    <string name="female">女</string>
+    <string name="getPhoto">从相册中获取</string>
+    <string name="usrTitle">mine</string>
+    <string name="LabelTitle">先给标签取个名字</string>
+    <string name="buttonTitleOfPop">提醒</string>
+    <string name="buttonTitle2OfPop">分享</string>
+    <string name="buttonTitle3OfPop">删除</string>
+</resources>

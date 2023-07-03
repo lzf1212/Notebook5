@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:background="#FAF1CE"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/labelNameLabel"
+        android:padding="10dp"
+        android:hint="@string/LabelTitle"
+        android:textSize="40dp"
+        android:maxLength="30"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:id="@+id/labelScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:id="@+id/labelLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageButton
+            android:onClick="addTextLabel"
+            android:id="@+id/addNoteButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:gravity="center"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_note_add_24dp" />
+
+        <ImageButton
+            android:id="@+id/addPhotoButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:gravity="center"
+            android:onClick="addPhotoLabel"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_add_to_photos_24dp" />
+
+        <ImageButton
+            android:onClick="declineLabel"
+            android:id="@+id/usrButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:gravity="center"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_remove_circle_24dp" />
+
+    </LinearLayout>
+</LinearLayout>

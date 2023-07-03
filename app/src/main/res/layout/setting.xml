@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:fadingEdge="vertical"
+    android:fillViewport="true"
+    android:scrollbars="vertical">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/LinearLayoutOfSetting"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#BAEAF3"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        tools:context=".SettingActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/rounded_ll_edittv"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/nameTitleLabelOfSetting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                android:text="@string/nameLabelTitle"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/nameEditOfSetting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:background="@null"
+                android:gravity="start"
+                android:hint="请输入姓名"
+                android:inputType="textPersonName"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/sexTitleLabelOfSetting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                android:text="@string/sexLabelTitle"
+                android:textSize="14sp" />
+
+            <RadioGroup
+                android:id="@+id/sexButtonOfSetting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:orientation="horizontal"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp">
+
+                <RadioButton
+                    android:id="@+id/femaleButtonOfSetting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/male"
+                    android:textSize="14sp"
+                    tools:layout_editor_absoluteX="169dp"
+                    tools:layout_editor_absoluteY="163dp" />
+
+                <RadioButton
+                    android:id="@+id/maleButtonOfSetting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/female"
+                    android:textSize="14sp"
+                    tools:layout_editor_absoluteX="169dp"
+                    tools:layout_editor_absoluteY="163dp" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/rounded_ll_edittv"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/starTitleLabelOfSetting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                android:text="@string/starLabelTitle"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/starEditOfSetting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:background="@null"
+                android:gravity="start"
+                android:hint="请输入星座"
+                android:inputType="textPersonName"
+                android:textSize="14sp"
+                tools:layout_editor_absoluteX="168dp"
+                tools:layout_editor_absoluteY="98dp" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/imageButtonOfSetting"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:background="#E1FDE1"
+            android:onClick="OpenPhotosAlum"
+            android:scaleType="fitCenter" />
+
+        <Button
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="#BAEAF3"
+            android:onClick="OpenPhotosAlum"
+            android:text="@string/getPhoto"
+            android:textSize="20dp" />
+
+        <Button
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="50dp"
+            android:background="#D0D6F8"
+            android:onClick="save"
+            android:text="@string/ok"
+            android:textSize="25dp" />
+
+
+    </LinearLayout>
+</ScrollView>

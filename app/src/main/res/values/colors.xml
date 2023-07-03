@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#BE575353</color>
+    <color name="colorPrimaryDark">#121312</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="myBarColor">#FA8864</color>
+    <color name="titleColor">#000000</color>
+    <color name="barColorOfMemo">#FD9169</color>
+    <color name="barColorOfUsr">#0B84BD</color>
+    <color name="transparency">#00000000</color>
+    <color name="transactionColor">#0580E2</color>
+</resources>
